@@ -1,0 +1,32 @@
+
+.header{
+    padding: 5px 10px;
+    background-color: silver;
+}
+.title{
+    color: slategrey;
+    text-decoration: none;
+}
+.login,.register{
+    float: right;
+    text-decoration: none;
+    color:aliceblue ;
+    padding: 5px 20px;
+}
+.navbar{
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.new-post{
+    float: right;
+    color: aliceblue ;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+.log-out{
+    float: right;
+    text-decoration: none;
+    color:aliceblue ;
+    padding: 5px 20px;
+}

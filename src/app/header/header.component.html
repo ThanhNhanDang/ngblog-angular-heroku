@@ -1,0 +1,21 @@
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+             <!--Title-->
+            <div class="col-md-6">
+                <h2><a href="" class="title">Spring Blog</a></h2>
+            </div>
+            <div class="col-md-3" *ngIf="authService.isAuthenticated()">
+                <button (click)="logout()"class="new-post btn btn-outline-danger">Logout</button>
+                <a href="/add-post" class="log-out btn btn-outline-success" *ngIf="!authService.isAuthenticatedRoleUser()">Add Post</a>
+                    
+            </div>
+             <!--Login and Register-->
+            <div class="col-md-3"  *ngIf="!authService.isAuthenticated()">
+                <a href="/login" class="login btn btn-outline-success" >Login</a>
+                <a href="/register" class="register btn btn-outline-secondary" >Register</a>
+            </div>
+        </div>
+    </div>
+</div>

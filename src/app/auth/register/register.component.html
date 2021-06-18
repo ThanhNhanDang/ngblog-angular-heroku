@@ -1,0 +1,22 @@
+<div id="login-box">
+    <div class="left">
+      <h1>Register</h1>
+      <form [formGroup]="registerForm" (ngSubmit)="ngSubmit()">
+      <input type="text" name="username" [formControlName]="'username'" placeholder="Username" />
+      <input type="text" name="email" [formControlName]="'email'" placeholder="E-mail" />
+      <input type="password" name="password" [formControlName]="'password'" placeholder="Password" />
+      <input type="password" name="password2" [formControlName]="'repeatPassword'" placeholder="Retype password" />
+      
+      <input type="submit" name="signup_submit" value="Register" />
+    </form>
+    </div>
+    
+    <div class="right">
+      <span class="loginwith">Sign in with<br />social network</span>
+      
+      <button class="social-signin facebook">Log in with facebook</button>
+      <button class="social-signin twitter">Log in with Twitter</button>
+      <button class="social-signin google">Log in with Google+</button>
+    </div>
+    <div class="or">OR</div>
+  </div>

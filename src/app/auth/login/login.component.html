@@ -1,0 +1,21 @@
+<div id="login-box">
+    <div class="left">
+      <h1>Log in</h1>
+      <form [formGroup] = 'loginForm' (ngSubmit) = "ngSubmit()">
+      <input type="text" name="username" placeholder="Userame"[formControlName]="'userName'" />
+      <input type="password" name="password" placeholder="Password"[formControlName]="'password'" />
+     
+      
+      <input type="submit" name="signup_submit" value="Log in" />
+    </form>
+    </div>
+    
+    <div class="right">
+      <span class="loginwith">Log in with<br />social network</span>
+      
+      <button class="social-signin facebook">Log in with facebook</button>
+      <button class="social-signin twitter">Log in with Twitter</button>
+      <button class="social-signin google">Log in with Google+</button>
+    </div>
+    <div class="or">OR</div>
+  </div>
